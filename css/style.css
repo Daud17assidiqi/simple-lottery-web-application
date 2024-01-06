@@ -1,0 +1,227 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* style */
+body {
+  font: 18px/24px "BebasNeueRegular", "Arial Narrow", arial, sans-serif;
+  background-color: #999;
+  counter-reset: urutan;
+}
+
+img {
+  display: none;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 80px;
+  font-size: 100px;
+  text-align: center;
+  color: #222;
+  text-shadow: 1px 1px 1px white;
+}
+
+#container {
+  position: relative;
+  width: 600px;
+  min-height: 420px;
+  margin: 130px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.goyang {
+  animation: tada 1s;
+}
+
+#pemenang {
+  text-align: center;
+  width: 600px;
+  position: absolute;
+  top: 70px;
+}
+
+#pemenang li {
+  font-size: 40px;
+  line-height: 1.4em;
+  counter-increment: urutan;
+}
+
+#pemenang li:before {
+  content: counter(urutan) ". ";
+}
+
+/* button */
+.button {
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  top: 150px;
+  vertical-align: top;
+  width: 160px;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  font-family: "BebasNeueRegular", "Arial Narrow";
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #454545;
+  border: 0;
+  border-bottom: 2px solid #2f2e2e;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #2f2e2e;
+  box-shadow: inset 0 -2px #2f2e2e;
+}
+
+@keyframes tada {
+  0% {
+    transform: scale(1);
+  }
+  10%,
+  20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+.goyang {
+  animation: tada 1s;
+}
